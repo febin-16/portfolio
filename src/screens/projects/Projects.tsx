@@ -11,7 +11,7 @@ export const Projects = () => {
       value: 'personal',
     },
   ];
-  const [activeTab, setActiveTab] = useState(data[0].value);
+  const [activeTab, ] = useState(data[0].value);
 
   return (
     <>

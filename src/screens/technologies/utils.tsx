@@ -1,16 +1,9 @@
 import {BiLogoPostgresql} from 'react-icons/bi';
-import {FaCss3, FaFacebook, FaGoogle, FaHtml5, FaNodeJs, FaReact, FaSass} from 'react-icons/fa';
-import {MdPayment} from 'react-icons/md';
+import {FaCss3, FaGoogle, FaHtml5, FaNodeJs, FaReact} from 'react-icons/fa';
 import {
-  SiAmazonaws,
-  SiApollographql,
   SiExpress,
-  SiGraphql,
   SiJavascript,
-  SiMongodb,
-  SiNestjs,
   SiNextdotjs,
-  SiRedux,
   SiStripe,
   SiTailwindcss,
   SiTypescript,

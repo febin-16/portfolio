@@ -1,4 +1,3 @@
-import {useDownloadPdf} from 'hooks/useDownloadPdf';
 import {useMediaQuery} from 'react-responsive';
 import {mediaBreakpoints} from 'responsive';
 
