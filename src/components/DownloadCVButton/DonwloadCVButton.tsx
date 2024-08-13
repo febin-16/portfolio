@@ -20,7 +20,7 @@ export const DonwloadCVButton = ({isSmall}: {isSmall?: boolean}) => {
   ) : (
     <a
       title="download cv"
-      href='https://drive.google.com/file/d/1PrxGpxbL-Fm7i1W04ouV4hFyaX0tkbGZ/view?usp=drive_link'
+      href='https://drive.google.com/drive/folders/1UUVmJd8EdUysGQraMMz9D-Gk000AvGYh?usp=sharing'
       target='_blank'
       className={`${!isSmall ? 'mb-8 mr-10 w-full rounded px-12 py-4 sm:mb-0 sm:w-fit' : ''}  btn`}
     >
