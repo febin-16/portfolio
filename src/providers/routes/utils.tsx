@@ -15,7 +15,6 @@ export interface RoutesLinkItems {
 const Home = lazy(() => import('./../../screens/home/Home'));
 const About = lazy(() => import('./../../screens/about/About'));
 const Contact = lazy(() => import('./../../screens/contact/Contact'));
-const PdfPriever = lazy(() => import('./../../screens/pdfPreviewer/PdfPreviewer'));
 const Projects = lazy(() => import('./../../screens/projects/Projects'));
 const Technologies = lazy(() => import('./../../screens/technologies/Technologies'));
 
@@ -61,7 +60,7 @@ export const routesLinkItems = (pdfPreviewerOpen: boolean): RoutesLinkItems[] =>
   ];
 };
 
-export const routes = (pdfPreviewerOpen: boolean) => {
+export const routes = () => {
   return createBrowserRouter([
     {
       element: <Layout />,
@@ -87,12 +86,7 @@ export const routes = (pdfPreviewerOpen: boolean) => {
           path: '/contact',
           element: <Contact />,
         },
-        pdfPreviewerOpen
-          ? {
-              path: '/cv',
-              element: <PdfPriever />,
-            }
-          : {},
+    
       ],
     },
   ]);
