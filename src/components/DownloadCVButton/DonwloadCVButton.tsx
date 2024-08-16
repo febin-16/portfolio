@@ -42,13 +42,14 @@ export const DonwloadCVButton = ({isSmall}: {isSmall?: boolean}) => {
   });
 
   return mobile ? (
-    <a
+    <button
       title="download cv"
-      className={`${!isSmall ? 'mb-8 mr-10 w-full rounded px-12 py-4 text-center sm:mb-0 sm:w-fit' : '/FEBIN_P_BIJU_RESUME'}  btn`}
-      href=""
+      onClick={handleDownload}
+      disabled={isLoading}
+      className={`${!isSmall ? 'mb-8 mr-10 w-full rounded px-12 py-4 sm:mb-0 sm:w-fit' : ''}  btn`}
     >
-      Download CV
-    </a>
+      {isLoading ? 'Downloading...' : 'Download CV'}
+    </button>
   ) : (
     <button
       title="download cv"
